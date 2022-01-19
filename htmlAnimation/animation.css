@@ -8,7 +8,8 @@
 }
 .inner{
     margin: 50px auto; 
-    width: 90%;
+    width: 500px;
+    height: 500px;
     background-image: url(https://64.media.tumblr.com/5762dbb6ab3371fbceaeb4f3d07b2ac6/590ef704d33705f2-df/s500x750/3409355d6450464ca8f55b3c286887bbcea510a8.jpg);
     background-size: cover;
     background-position: center;
