@@ -140,12 +140,6 @@ img.models {
     width: 100%;
 }
 
-.footer {
-    background-image: linear-gradient(to right, rgb(0, 0, 15), rgb(9, 0, 43));
-    position: relative;
-    text-align: center;
-}
-
 /* Contact */
 
 .contact {
