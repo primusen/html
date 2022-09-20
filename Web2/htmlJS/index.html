@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>JS Test</title>
+        <link href="css/css.css" rel="stylesheet">
+        <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+    </head>
+
+    <body>
+        <div class="output">
+            <div id="o0"></div>
+            <div id="o1"></div>
+            <div id="o2"></div>
+        </div>
+        
+        <button id="startBtn" onclick="inputPrompt()">Start</button>
+
+        <script>
+            function inputPrompt() {
+                var input_name = window.prompt("What's your name?");
+                var input_food = window.prompt("What's your favourite food?");
+                var input_country = window.prompt("What country are you from?");
+                var input_city = window.prompt("and in what city?");
+
+                if (confirm("Lastly, press 'Ok' if you are okay.")) {
+                    var input_thoughts = "Great to hear you're okay!"
+                } else {
+                    var input_thoughts = "You should just do it."
+                }
+
+
+                let outList = [
+                    "Your name is " + input_name + " and your favourite food is " + input_food,
+                    "you live in " + input_city + ", " + input_country + ".",
+                    input_thoughts
+                ]
+
+                for (i in outList) {
+                    let output = $("#o" + i);
+
+                    output.html(outList[i])
+                }
+
+                document.getElementById("startBtn").style.visibility="hidden";
+            }
+        </script>
+    </body>
+</html>
