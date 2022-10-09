@@ -36,6 +36,8 @@ function newGuess () {
 
     while (!completed) {
         guess = prompt('Enter a letter:')
+        guess = guess.toLowerCase();
+        
         if (guess.length === 1 && guess.match(/[a-z]/i)) {
             if (!guessed.includes(guess)) {
                 completed = true;
