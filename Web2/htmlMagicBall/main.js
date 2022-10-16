@@ -138,5 +138,5 @@ function loop () {
                 location.reload(); 
             }
         } loop();
-    }, 2500); 
+    }, 50); 
 }
