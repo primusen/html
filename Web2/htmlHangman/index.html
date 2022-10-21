@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8"/>
+        <title>Hangman</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="icon" type="image/png" href="hangman_icon.png" alt="icon"/>
+    </head>
+
+    <body>
+        <div class="flex">
+            <div id="display1"></div>
+            <div id="display2"></div>  
+
+            <div id="btn_div" class="button">
+                <button id="btn" class="neu-btn" onclick="press()"><span>Start Game</span></button> 
+            </div>
+
+            <div id="stuck" onclick="gameLoop()">Stuck?</div>
+        </div>
+
+        <script src="main.js"></script>
+    </body>
+</html>
