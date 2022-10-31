@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link id="stylesheet" rel="stylesheet" href="style-light.css">
+        <title>DOM Methods</title>
+    </head>
+
+    <body>
+        <div>
+            <button onclick="switchMode()"><span>Switch Mode</span></button>
+            <button onclick="toggleCSS()"><span>Toggle CSS</span></button>
+        </div>
+    
+        
+        <h1>Text area:</h1>
+        <div id="text-area">
+            <p id='0' onclick="editParagraph(0)">Example Paragraph</p>
+        </div>
+
+        <div class="container">
+            <button onclick="createParagraph()"><span>Add Paragraph</span></button>
+            <button onclick="removeLastChild()"><span>Remove Last</span></button>
+        </div>
+    
+
+        <script src="main.js"></script>
+    </body>
+</html>
