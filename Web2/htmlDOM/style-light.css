@@ -1,0 +1,20 @@
+body {
+    color: #4c4c4c;
+    background-color: #efefef;
+}
+
+#text-area {
+    background-color: white;
+}
+
+p:hover {
+    color: #626262;
+}
+
+button {
+    background-color: #ffffff; 
+}
+
+button:hover {
+    background-color: #f4f4f4; 
+}
