@@ -84,5 +84,6 @@ input {
 
 .sound-area div {
     gap: 1vw;
+    flex-wrap: nowrap;
 }
 
