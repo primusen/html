@@ -79,5 +79,10 @@ input {
     flex-wrap: wrap;
     justify-content: center;
     margin: 10px;
+    gap: 0.5vw;
+}
+
+.sound-area div {
     gap: 1vw;
 }
+
