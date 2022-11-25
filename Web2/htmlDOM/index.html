@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link class="stylesheet" rel="stylesheet" href="./css/style.css">
+        <link class="stylesheet" rel="stylesheet" href="./css/style-light.css" id="stylesheet">
+        <title>DOM Methods</title>
+    </head>
+
+    <body>
+        <div>
+            <button onclick="switchMode()"><span>Switch Mode</span></button>
+            <button onclick="toggleCSS()"><span>Toggle CSS</span></button>
+            <button onclick="playSound(0)"><span id="music">Music ON</span></button>
+        </div>
+    
+
+        <h1>Text area:</h1>
+        <div id="text-area">
+            <p id='0' onclick="editParagraph(0)">Example Paragraph</p>
+        </div>
+
+        <div class="container">
+            <button onclick="createParagraph()"><span>Add Paragraph</span></button>
+            <button onclick="removeLastChild()"><span>Remove Last</span></button>
+        </div>
+    
+
+        <div class="center">
+            <div class="color-box" id="c0">
+                <input id="i0" type="color">    
+            </div>
+            <div class="color-box" id="c1">
+                <input id="i1" type="color">     
+            </div> 
+        </div>
+
+        <div class="center">
+            <div class="gradient-box"></div>
+        </div>
+
+        <script src="./js/main.js"></script>
+        <script src="./js/update.js"></script>
+
+        <div class="sound-area">
+            <button onclick="playSound(1)">Fart</button>
+            <button onclick="playSound(2)">Markiplier</button>
+            <button onclick="playSound(3)">Tada</button>
+            <button onclick="playSound(4)">Vineboom</button>
+            <button onclick="playSound(5)">Violin</button>
+            <button onclick="playSound(6)">Yippie</button>
+        </div>
+    </body>
+</html>
