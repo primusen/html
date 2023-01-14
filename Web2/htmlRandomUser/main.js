@@ -102,25 +102,13 @@ function randomize() {
 
         towrite.push(`${parseInt(dob[2])} ${month} ${dob[0]}`);
 
-        // Country
+        // Country, city, address, email, phone, username and password
         towrite.push(`${data["results"][0]["location"]["country"]}`);
-
-        // City
         towrite.push(`${data["results"][0]["location"]["city"]}`);
-
-        // Address
         towrite.push(`${data["results"][0]["location"]["street"]["name"]} ${data["results"][0]["location"]["street"]["number"]}<br>${data["results"][0]["location"]["state"]} ${data["results"][0]["location"]["postcode"]}`);
-        
-        // Email
         towrite.push(`${data["results"][0]["email"]}`);
-
-        // Phone
-        towrite.push(`${data["results"][0]["phone"]}`);
-
-        // Username
+        towrite.push(`${data["results"][0]["cell"]}`);
         towrite.push(`${data["results"][0]["login"]["username"]}`);
-
-        // Password
         towrite.push(`${data["results"][0]["login"]["password"]}${data["results"][0]["login"]["salt"]}`);
 
         for (let index = 0; index < towrite.length; index++) {
