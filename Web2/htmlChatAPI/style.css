@@ -1,0 +1,78 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: rgb(70, 70, 70);
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+}
+
+body > div {
+    padding: 20px;
+}
+
+body > div > div {
+    padding-bottom: 20px;
+}
+
+.flex-container {
+    display: flex;
+    width: 90vw;
+    align-items: center;
+    flex-direction: column;
+    background-color: aliceblue;
+    border: 2px solid rgb(134, 198, 255);
+    border-radius: 5px;
+    padding: 10px 20px;
+    margin: 10px 0;
+}
+.flex-container > div:not(:has(.textarea-container)) {
+    display: flex;
+    margin: 5px 0;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.flex-container button {
+    height: 30px;
+    font-size: 1em;
+    color: white;
+    width: 49.9%;
+    border-radius: 5px;
+    background-color: rgb(134, 198, 255);
+    border: 0;
+}
+
+.flex-container button:hover {
+    background-color: rgb(113, 189, 255);
+}
+
+.textarea {
+    border: 1px solid #ccc;
+    padding: 0.2vh 0.5vw;
+    border-radius: 5px;
+    display: block;
+    max-width: 100%;
+    width: 89vw;
+    overflow: hidden;
+    min-height: 80px;
+    line-height: 20px;
+}
+
+.textarea[contenteditable]:empty::before {
+    content: "Text goes here";
+    color: gray;
+}
+
+.reset-button {
+    position: absolute;
+    top: 0.2vh;
+    color: rgba(0, 0, 0, 0.25);
+}
+  

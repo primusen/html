@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <div>
+            <div>
+                <h3>Summariser</h3>
+                <div class="flex-container">
+                    <div class="textarea-container">
+                        <p><span class="textarea input-area" contenteditable></span></p>
+                    </div>
+                    
+                    <div>
+                        <button onclick="makeRequest(0)">Summarise</button>
+                        <button onclick="clearTextarea(0)">Clear</button>
+                    </div>
+
+                    <div class="textarea-container">
+                        <p><span class="textarea output-area" style="color: grey;">Output goes here</span></p>
+                    </div>
+                </div>    
+            </div>
+            
+            <div>
+                <h3>Rewriter</h3>
+                <div class="flex-container">
+                    <div class="textarea-container">
+                        <p><span class="textarea input-area" contenteditable></span></p>
+                    </div>
+                    
+                    <div>
+                        <button onclick="makeRequest(1)">Rewrite</button>
+                        <button onclick="clearTextarea(1)">Clear</button>
+                    </div>
+                    
+                    <div class="textarea-container">
+                        <p><span class="textarea output-area" style="color: grey;">Output goes here</span></p>
+                    </div>
+                </div>    
+            </div>
+            
+        </div>
+
+        <p class="reset-button" onclick="newapikey()">Is your API key invalid? Click here</p>
+
+        <script src="main.js"></script>
+    </body>
+</html>
