@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+@keyframes idlespin {
+    0% {transform: rotate(0deg);}
+    100% {transform: rotate(360deg);}
+}
+
+button {
+    padding: 20px;
+    border-radius: 2px;
+    border: none;
+    position: absolute;
+    bottom: 10%;
+    transform: translate(50%, 50%);
+    right: 50%;
+}
+
+canvas {
+    margin: 0;
+}
+
+.canvas {
+    z-index: 10;
+    position: absolute;
+    right: 50vw;
+    transform: translate(50%, 0);
+}
+
+.idle {
+    animation: idlespin 45s linear infinite; 
+}
